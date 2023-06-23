@@ -1,11 +1,13 @@
 package com.example.stockpriceapp;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -41,7 +43,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        // Check and create the JSON file if needed
+        dataHandler.checkAndCreateJsonFile(this);
         stockRecyclerView = findViewById(R.id.stockRecyclerView);
         stockAdapter = new StockAdapter(MainActivity.this);
         stockRecyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -146,6 +149,12 @@ public class MainActivity extends AppCompatActivity {
                                 Toast.makeText(MainActivity.this, "There is no such stock+\n Or Too many API Requests!", Toast.LENGTH_SHORT).show();
                                 return;
                             }
+                            //remove the keyboard like the user clicked Back
+                            InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                            imm.hideSoftInputFromWindow(stockSymbolEditText.getWindowToken(), 0);
+                            //set the text back to ""
+                            stockSymbolEditText.setText("");
+
                             JSONObject json = new JSONObject(jsonResponse);
                             JSONObject globalQuote = json.getJSONObject("Global Quote");
                             String symbol = globalQuote.getString("01. symbol");

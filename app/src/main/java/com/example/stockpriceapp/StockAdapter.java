@@ -44,7 +44,6 @@ public class StockAdapter extends RecyclerView.Adapter<StockAdapter.StockViewHol
         Stock deletedStock = stockList.get(position);
         dataHandler.removeStockFromJson(context, deletedStock);
         notifyItemRemoved(position);
-        Toast.makeText(context, deletedStock.getStockSymbol() + " was removed", Toast.LENGTH_SHORT).show();
     }
 
     @Override

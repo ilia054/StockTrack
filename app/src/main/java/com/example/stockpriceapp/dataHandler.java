@@ -62,7 +62,6 @@ public class dataHandler {
         } catch (JSONException | IOException e) {
             e.printStackTrace();
         }
-        Toast.makeText(context, "Stock added to file successfully", Toast.LENGTH_SHORT).show();
         myStocks.add(stock);
         myStockAdapter.notifyDataSetChanged();
     }
@@ -177,5 +176,28 @@ public class dataHandler {
             if(stock.getStockSymbol().equals(symbol.toUpperCase()))
                 return true;
         return false;
+    }
+    public static void checkAndCreateJsonFile(Context context) {
+        String fileName = "savedStocks.json";
+        File file = new File(context.getFilesDir(), fileName);
+
+        if (!file.exists()) {
+            try {
+                // Create an empty JSONObject
+                JSONObject json = new JSONObject();
+
+                // Create an empty "Stocks" array
+                JSONArray stocksArray = new JSONArray();
+
+                // Add the "Stocks" array to the JSON object
+                json.put("Stocks", stocksArray);
+
+                // Write the JSON object to the file
+                writeJsonObjectToFile(context, json);
+
+            } catch (JSONException | IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }
