@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Stock Symbol -->
+    <TextView
+        android:id="@+id/stockSymbolTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:textSize="65dp"
+        android:textStyle="bold|italic"
+        android:textColor="#6750A4"
+        android:fontFamily="Montserrat" />
+
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stockSymbolTextView"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <Button
+            android:id="@+id/buttonDaily"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:padding="8dp"
+            android:text="Daily"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/buttonWeekly"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:padding="8dp"
+            android:text="Weekly"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/buttonMonthly"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:padding="8dp"
+            android:text="Monthly"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/buttonYearly"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Yearly"
+            android:padding="8dp"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- Textview about the Graph -->
+    <TextView
+        android:id="@+id/graphTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Daily Change - "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textColor="#6750A4" />
+
+    <!-- Additional TextView -->
+    <TextView
+        android:id="@+id/clickedCoordinatesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/graphTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textColor="#6750A4" />
+
+    <!-- Stock Chart -->
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/stockChart"
+        android:layout_width="420dp"
+        android:layout_height="510dp"
+        android:layout_below="@id/clickedCoordinatesTextView"
+        android:layout_marginTop="13dp"
+        android:padding="20dp"/>
+
+</RelativeLayout>
