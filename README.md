@@ -8,6 +8,17 @@
 
 Track your favorite stocks, monitor their daily changes in percentage and dollars, and explore their historical performance with interactive graphs (daily, weekly, monthly, and yearly changes).
 
+## Table of Contents
+- [Features](#features)
+  - [Add a Stock](#add-a-stock)
+  - [Remove a Stock](#remove-a-stock)
+  - [Stock Price Graph](#stock-price-graph)
+  - [Daily Price Change](#daily-price-change)
+  - [Weekly Price Change](#weekly-price-change)
+  - [Monthly Price Change](#monthly-price-change)
+  - [Yearly Price Change](#yearly-price-change)
+- [License](#license)
+
 ## Features
 
 ### Add a Stock
@@ -59,14 +70,6 @@ Track yearly changes in stock performance.
   <img src="https://github.com/ilia054/StockTrack/raw/main/assets/88554020/6c03885c-52e2-4a96-87c8-5a302aafd387.gif" alt="Yearly Price Change" width="400">
 </p>
 
-## Getting Started
-
-To get started with StockTrack, please visit the [documentation](https://github.com/ilia054/StockTrack/wiki).
-
-## Contributions
-
-We welcome contributions! If you'd like to contribute to StockTrack, please check out our [contribution guidelines](CONTRIBUTING.md).
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
@@ -74,5 +77,5 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
 <p align="center">
-  Made with ❤️ by Your Name
+  Made by Ilya Lev
 </p>
