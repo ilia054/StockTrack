@@ -1,5 +1,5 @@
 # StockTrack
-**StockTrack is Small Scale stock price tracking application developed in Java **
+**StockTrack is Small Scale stock price tracking application developed in Java**
 
 In the app you can keep track of stock you select,view their daily change by %, $ and much more,
 You also have the ability to view the stock's hisotry via a graph (Daily change,Weekly Change, Monthly Change, Yearly Change)
