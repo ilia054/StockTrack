@@ -25,49 +25,42 @@ Track your favorite stocks, monitor their daily changes in percentage and dollar
 Keep an eye on your investments by easily adding stocks to your portfolio.
 
 <p align="center">
-  <img src="https://github.com/ilia054/StockTrack/raw/main/assets/88554020/171a7231-d2ce-4756-9b5b-4444d665e156.gif" alt="Add a Stock" width="400">
+  <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/88554020/265264387-10c3946f-7bd2-4367-8f0b-10aae9bc171f.gif" alt="Add a Stock" width="400">
 </p>
 
 ### Remove a Stock
 Remove stocks that you no longer wish to track effortlessly.
 
 <p align="center">
-  <img src="https://github.com/ilia054/StockTrack/raw/main/assets/88554020/0084ab42-e742-4249-970a-0c953aa41071.gif" alt="Remove a Stock" width="400">
-</p>
-
-### Stock Price Graph
-Visualize stock price trends with interactive graphs.
-
-<p align="center">
-  <img src="https://github.com/ilia054/StockTrack/raw/main/assets/88554020/034e142c-fcec-4c89-aeb5-fe3a129201da.gif" alt="Stock Price Graph" width="400">
+  <img src="https://github.com/ilia054/StockTrack/assets/88554020/f225fad7-f8dc-41d1-a708-3274075f1482.gif" alt="Remove a Stock" width="400">
 </p>
 
 ### Daily Price Change
 Stay updated on daily price fluctuations.
 
 <p align="center">
-  <img src="https://github.com/ilia054/StockTrack/raw/main/assets/88554020/5e7d9a61-1089-49a0-9a17-37d290c37dae.gif" alt="Daily Price Change" width="400">
+  <img src="https://github.com/ilia054/StockTrack/assets/88554020/0f43dfb8-049c-4598-9319-f64d50293792.gif" alt="Daily Price Change" width="400">
 </p>
 
 ### Weekly Price Change
 Monitor weekly changes in stock prices.
 
 <p align="center">
-  <img src="https://github.com/ilia054/StockTrack/raw/main/assets/88554020/65041ccf-da81-47ec-a06f-d68dbf68cabb.gif" alt="Weekly Price Change" width="400">
+  <img src="https://gyazo.com/b57de2be78ea179ca340999796093c8a.gif" alt="Weekly Price Change" width="400">
 </p>
 
 ### Monthly Price Change
 Analyze monthly price trends for better decision-making.
 
 <p align="center">
-  <img src="https://github.com/ilia054/StockTrack/raw/main/assets/88554020/4d2bd392-ecdd-4db9-a303-9b0ca7d18178.gif" alt="Monthly Price Change" width="400">
+  <img src="https://gyazo.com/393f38bef346c6b1948fe14881e8df45.gif" alt="Monthly Price Change" width="400">
 </p>
 
 ### Yearly Price Change
 Track yearly changes in stock performance.
 
 <p align="center">
-  <img src="https://github.com/ilia054/StockTrack/raw/main/assets/88554020/6c03885c-52e2-4a96-87c8-5a302aafd387.gif" alt="Yearly Price Change" width="400">
+  <img src="https://gyazo.com/8a8386726dc2652400b35ee74b9c2e76.gif" alt="Yearly Price Change" width="400">
 </p>
 
 ## License
